@@ -1,0 +1,95 @@
+.expert-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem;
+  max-width: 1200px;
+  width: 70vw;
+  margin: 0 auto;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #e6f7f1, #d1f2e0);
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+  h2, h3 {
+    color: #2d6a4f;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 1rem;
+    color: #333;
+    margin: 0.5rem 0;
+  }
+
+  .profile-section {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    h4 {
+      font-size: 1.25rem;
+      color: #1b4332;
+      margin-bottom: 0.8rem;
+      border-bottom: 2px solid #52b788;
+      padding-bottom: 0.2rem;
+    }
+
+    p {
+      display: flex;
+      justify-content: space-between;
+      margin: 0.5rem 0;
+      font-size: 1rem;
+      color: #333;
+
+      strong {
+        color: #40916c;
+        font-weight: 500;
+      }
+    }
+
+    .advice-areas {
+      margin-top: 1rem;
+
+      h5 {
+        font-size: 1.15rem;
+        color: #1b4332;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+        color: #555;
+      }
+    }
+  }
+
+  .backButton {
+    margin-top: 2rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #2d6a4f;
+    color: #ffffff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
+    &:hover {
+      background-color: #1b4332;
+      transform: scale(1.05);
+    }
+  }
+}
