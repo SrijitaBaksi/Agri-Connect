@@ -8,7 +8,7 @@ import LogoutIcon from "@mui/icons-material/ExitToAppOutlined";
 import "./ExpertSidebar.scss";
 import { Link, useNavigate } from "react-router-dom";
 import logo from '../../assets/logo.png';
-import newRequest from "../../utils/newRequest";
+import newRequest from "../../utils/newRequest.js";
 
 const ExpertSidebar = ({ setUserRole }) => {
   const navigate = useNavigate();

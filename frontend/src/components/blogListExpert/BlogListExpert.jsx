@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import BlogCardExpert from '../blogCardExpert/BlogCardExpert.jsx';
 import './BlogListExpert.scss';
-import newRequest from '../../utils/newRequest';
+import newRequest from '../../utils/newRequest.js';
 import { useNavigate } from 'react-router-dom';
 
 const BlogListExpert = () => {

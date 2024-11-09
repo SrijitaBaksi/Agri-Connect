@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import './Appointments.scss';
 import { useNavigate } from 'react-router-dom';
-import newRequest from '../../utils/newRequest';
+import newRequest from '../../utils/newRequest.js';
 import RequestedAppointmentList from '../requestedAppointmentList/RequestedAppointmentList';
 
 const Appointments = () => {

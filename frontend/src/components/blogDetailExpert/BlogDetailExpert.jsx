@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import newRequest from '../../utils/newRequest';
+import newRequest from '../../utils/newRequest.js';
 import './BlogDetailExpert.scss';
 
 const BlogDetailExpert = () => {

@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import { Bar, Pie } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend, ArcElement } from 'chart.js';
 import './PerformanceReport.scss';
-import newRequest from '../../utils/newRequest'; // Assuming you have this utility for API calls
+import newRequest from '../../utils/newRequest.js'; // Assuming you have this utility for API calls
 
 // Register necessary chart components
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend, ArcElement);

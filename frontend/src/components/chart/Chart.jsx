@@ -1,6 +1,6 @@
 // src/components/RevenueChart/RevenueChart.jsx
 import React, { useState, useEffect } from "react";
-import axios from "../../utils/newRequest"; // Import the axios instance
+import axios from "../../utils/newRequest.js"; // Import the axios instance
 import { BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer } from "recharts";
 import "./chart.scss";
 import newRequest from "../../utils/newRequest";

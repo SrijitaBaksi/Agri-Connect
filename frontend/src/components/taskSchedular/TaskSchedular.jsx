@@ -3,7 +3,7 @@ import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
 import axios from 'axios';
 import './TaskSchedular.scss';
-import newRequest from '../../utils/newRequest';
+import newRequest from '../../utils/newRequest.js';
 
 const TaskSchedular = () => {
     const [date, setDate] = useState(new Date());

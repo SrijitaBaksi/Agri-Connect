@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./BlogRecommendation.scss";
-import newRequest from "../../utils/newRequest";
+import newRequest from "../../utils/newRequest.js";
 
 const BlogRecommendation = () => {
   const [recommendation, setRecommendation] = useState(null);

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import newRequest from "../../utils/newRequest";
+import newRequest from "../../utils/newRequest.js";
 import { LineChart, Line, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from "recharts";
 import "./GrowthProgressTracker.scss";
 
