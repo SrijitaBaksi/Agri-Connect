@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import './Authentication.scss';
 import { useNavigate } from 'react-router-dom'; // assuming you're using React Router
-import newRequest from '../../utils/newRequest';
+import newRequest from '../../utils/newRequest.js';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
