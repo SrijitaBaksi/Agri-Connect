@@ -1,0 +1,113 @@
+// Define color variables
+$primary-color: #4e9f3d; // Light green
+$secondary-color: #d4e09b; // Soft secondary green
+$background-color: #f4f4f4; // Light gray background
+$button-hover-color: #3b7e2f; // Darker green for hover
+$text-color: #333; // Dark text color
+$input-background: #fff; // White background for inputs
+$input-border: #ccc; // Light gray border for inputs
+
+.recommendations {
+  max-width: 1000px;
+  width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid $secondary-color;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: $background-color;
+
+  h2 {
+    text-align: center;
+    color: $primary-color;
+  }
+
+  .input-group {
+    margin-bottom: 15px;
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: $text-color;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid $input-border;
+      background-color: $input-background;
+      border-radius: 4px;
+      transition: border-color 0.3s;
+
+      &:focus {
+        border-color: $primary-color;
+        outline: none;
+      }
+    }
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin: 10px 0px 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: $button-hover-color;
+    }
+  }
+
+  .loading {
+    text-align: center;
+    font-size: 18px;
+    color: $primary-color;
+    margin: 20px 0;
+  }
+
+  .result {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid $primary-color;
+    border-radius: 4px;
+    background-color: white;
+    color: $text-color;
+
+    /* Add a max-height and enable scrolling */
+    max-height: 500px; /* Set a max height to contain the results */
+    overflow-y: auto; /* Enable vertical scrolling */
+    
+    .recommendation-section {
+      h4 {
+        margin: 0 0 10px;
+        color: $primary-color;
+      }
+
+      h5 {
+        margin-top: 10px;
+        color: $primary-color;
+      }
+
+      ul {
+        list-style-type: disc;
+        padding-left: 20px;
+
+        li {
+          margin-bottom: 5px; /* Add spacing between list items */
+        }
+      }
+    }
+  }
+
+  .error {
+    margin-top: 20px;
+    color: red;
+    text-align: center;
+  }
+}
