@@ -56,12 +56,12 @@ export const signin = async (req, res) => {
         const token = jwt.sign(
             { id: user._id, role: user.role },
             process.env.JWT_KEY,
-            { expiresIn: "10h" }
+            { expiresIn: "1d" }
         );
 
         // Set token in cookie
         return res
-            .cookie('token', token, { httpOnly: true })
+            .cookie('token', token, { httpOnly: true,secure: true, sameSite: 'none' })  // Setting cookie
             .status(200)
             .json({ message: "Logged in successfully", token, role: user.role });
     } catch (err) {
