@@ -1,5 +1,3 @@
-// src/components/widget/Widget.jsx
-
 import React from "react";
 import "./Widget.scss";
 
