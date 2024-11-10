@@ -115,6 +115,8 @@ This is just the beginning for AgriConnect, and we are excited about its future.
 
 ## ⚙️ How to Clone & Run the Project
 
+### Use chatterjeeanata091@gmail.com and password Ananta@20102002 for siging in to an existing farmer profile to check how thw stats are working and displayed similarly sign in through srijita@gmail.com and password 123456 for seeing the stats and working of an existing expert profile
+
 1. **Clone the Repository:**
 
    ```bash
