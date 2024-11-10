@@ -1,7 +1,7 @@
 import axios from 'axios'
-axios.defaults.withCredentials = true;
+
 const newRequest = axios.create({
-    baseURL: "https://agri-connect-2-d3lh.onrender.com/api",
+    baseURL: "http://localhost:8000/api",
     withCredentials: true,
 })
 
