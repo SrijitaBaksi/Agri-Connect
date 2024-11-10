@@ -1,4 +1,9 @@
 # AgriConnect: Where Farmers Meet Experts & Technology for a Greener Future! 🌾
+![Alt Text](frontend/src/assets/LoginPage.jpeg)
+
+![Alt Text](frontend/src/assets/FarmerHomePage.jpeg)
+
+
 
 **AgriConnect** is an innovative platform designed to empower farmers by connecting them with agricultural experts and modern technology. Our goal is to make farming smarter, more efficient, and more sustainable. By integrating AI-powered crop recommendations, real-time weather updates, expert consultations, and effective task management, we aim to revolutionize the way farming is done.
 
