@@ -2,7 +2,7 @@
     "rewrites": [
       {
         "source": "/api/(.*)",
-        "destination": "https://weather-xgyu.onrender.com/api/$1"
+        "destination": "https://agri-connect-ruwo.onrender.com/api/$1"
       },
       {
         "source": "/(.*)",
