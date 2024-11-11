@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "../../utils/newRequest"; // Import the axios instance
 import { BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid, ResponsiveContainer } from "recharts";
-import "./chart.scss";
+import "./Chart.scss";
 import newRequest from "../../utils/newRequest";
 import Cookies from 'js-cookie'
 

@@ -8,7 +8,7 @@ import ListOutlinedIcon from "@mui/icons-material/ListOutlined";
 // import Switch from "@mui/material/Switch";
 import profileImg from '../../assets/profile.png';
 
-import "./navbar.scss";
+import "./Navbar.scss";
 import { Link } from "react-router-dom";
 
 

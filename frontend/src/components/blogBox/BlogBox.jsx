@@ -1,7 +1,7 @@
 // src/components/blogBox/BlogBox.jsx
 
 import React from 'react';
-import './blogBox.scss';
+import './BlogBox.scss';
 
 const BlogBox = ({ title, content }) => {
   return (
