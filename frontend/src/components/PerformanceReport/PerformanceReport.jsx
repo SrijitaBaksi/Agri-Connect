@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import { Bar, Pie } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend, ArcElement } from 'chart.js';
 import './PerformanceReport.scss';
-import newRequest from '../../utils/newRequest.js'; // Assuming you have this utility for API calls
+import newRequest from '../../utils/newRequest'; // Assuming you have this utility for API calls
 
 // Register necessary chart components
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend, ArcElement);
@@ -18,7 +18,7 @@ const Performance = () => {
   useEffect(() => {
     const fetchUserData = async () => {
       try {
-        const response = await newRequest.get('/expert-details/user/profile', {
+        const response = await newRequest.get('/api/expert-details/user/profile', {
           withCredentials: true, // Include credentials if needed
         });
         setUserData(response.data); // Store the user data in the state
@@ -34,7 +34,7 @@ const Performance = () => {
     if (userData) {
       const fetchPerformanceData = async () => {
         try {
-          const response = await newRequest.get(`/expert-details/${userData._id}`, {
+          const response = await newRequest.get(`/api/expert-details/${userData._id}`, {
             withCredentials: true, // Include credentials if needed
           });
           setPerformanceData(response.data); // Store the fetched data in the state

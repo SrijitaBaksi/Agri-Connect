@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./BlogRecommendation.scss";
-import newRequest from "../../utils/newRequest.js";
+import newRequest from "../../utils/newRequest";
 
 const BlogRecommendation = () => {
   const [recommendation, setRecommendation] = useState(null);
@@ -11,7 +11,7 @@ const BlogRecommendation = () => {
   useEffect(() => {
     const fetchRecommendation = async () => {
       try {
-        const response = await newRequest.get("/blog-recommendations");
+        const response = await newRequest.get("/api/blog-recommendations");
         setRecommendation(response.data);
         setLoading(false);
       } catch (err) {

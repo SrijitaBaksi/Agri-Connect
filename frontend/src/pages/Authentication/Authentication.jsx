@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import './Authentication.scss';
 import { useNavigate } from 'react-router-dom'; // assuming you're using React Router
-import newRequest from '../../utils/newRequest.js';
+import newRequest from '../../utils/newRequest';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -16,7 +16,7 @@ const Authentication = ({ setUserRole }) => {
   useEffect(() => {
     const checkToken = async () => {
       try {
-        const response = await newRequest.get('/auth/validate-token', { 
+        const response = await newRequest.get('/api/auth/validate-token', { 
           withCredentials: true 
         });
         if (response.data && response.data.role) {
@@ -29,7 +29,7 @@ const Authentication = ({ setUserRole }) => {
       }
     };
     checkToken();
-  }, [navigate, setUserRole]);
+  }, [setUserRole]);
 
   const handleRegisterClick = () => {
     containerRef.current.classList.add('active');
@@ -46,7 +46,7 @@ const Authentication = ({ setUserRole }) => {
   const handleSignup = async (e)=>{
     e.preventDefault()
     try{
-      const response = await newRequest.post('/auth/signup',{
+      const response = await newRequest.post('/api/auth/signup',{
         name,
         email,
         password,
@@ -64,14 +64,13 @@ const Authentication = ({ setUserRole }) => {
   const handleSignin = async(e)=>{
     e.preventDefault()
     try{
-      const response = await newRequest.post('/auth/signin',{
+      const response = await newRequest.post('/api/auth/signin',{
         email,
         password,
         role,
       },{withCredentials: true})
-      document.cookie = `token=${response.data.token}; path=/;`;
       toast.success(response.data.message)
-      setUserRole(response.data.role)
+      setUserRole(role)
       navigate(role === 'farmer'? '/farmer_home': 'expert_home')
 
 

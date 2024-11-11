@@ -30,7 +30,8 @@ const PORT = process.env.PORT || 8000;
 // Set up middleware
 app.use(cookieParser());
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: 'https://weather-b6e3.vercel.app',
+    // origin: 'http://localhost:5173',
     credentials: true,
 }));
 app.use(express.json());
@@ -39,9 +40,10 @@ app.use(express.json());
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: 'http://localhost:5173',  // Adjust this as needed for your frontend URL
+        origin: 'https://weather-b6e3.vercel.app',  // Adjust this as needed for your frontend URL
+        // origin: 'http://localhost:5173',
         credentials: true,
-        methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
+        methods: ["GET", "POST"]
     },
 });
 

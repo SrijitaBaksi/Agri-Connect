@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
+import LanguageOutlinedIcon from "@mui/icons-material/LanguageOutlined";
+import FullscreenOutlinedIcon from "@mui/icons-material/FullscreenOutlined";
+import NotificationsActiveOutlinedIcon from "@mui/icons-material/NotificationsActiveOutlined";
+import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
+import ListOutlinedIcon from "@mui/icons-material/ListOutlined";
+// import Switch from "@mui/material/Switch";
 import profileImg from '../../assets/profile.png';
-import "./Navbar.scss";
+
+import "./navbar.scss";
 import { Link } from "react-router-dom";
 
 
@@ -14,11 +21,6 @@ const Navbar = () => {
           <SearchOutlinedIcon />
         </div>
         <div className="items">
-          
-          {/* <div className="item profileImg">
-            <img src={profileImg} alt="Profile" />
-
-          </div> */}
           <Link to="/profile" style={{ textDecoration: "none" }}>
             <div className="item profileImg">
               <img src={profileImg} alt="Profile" />

@@ -21,7 +21,6 @@ const ExpertNavbar = () => {
           <SearchOutlinedIcon />
         </div>
         <div className="items">
-          
           <Link to="/expert-profile" style={{ textDecoration: "none" }}>
             <div className="item profileImg">
               <img src={profileImg} alt="Profile" />

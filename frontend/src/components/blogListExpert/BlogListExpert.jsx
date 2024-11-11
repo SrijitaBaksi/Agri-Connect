@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import BlogCardExpert from '../blogCardExpert/BlogCardExpert.jsx';
 import './BlogListExpert.scss';
-import newRequest from '../../utils/newRequest.js';
+import newRequest from '../../utils/newRequest';
 import { useNavigate } from 'react-router-dom';
 
 const BlogListExpert = () => {
@@ -17,7 +17,7 @@ const BlogListExpert = () => {
   useEffect(() => {
     const fetchUserBlogs = async () => {
       try {
-        const response = await newRequest.get('/posts/user', {
+        const response = await newRequest.get('/api/posts/user', {
           withCredentials: true,
         });
         setBlogs(response.data);

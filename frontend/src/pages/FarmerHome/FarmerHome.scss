@@ -1,110 +1,109 @@
 :root {
-    --primary-green: #2d6a4f;
-    --light-green: #95d5b2;
-    --dark-green: #1b4332;
-    --background-gray: #f7f8f8;
-    --text-dark: #344e41;
-  }
-  
-  .home {
-    display: flex;
-    width: 100vw;
-    height: 100vh;
-  
-    .homeContainer {
-      flex: 6;
-      background-color: whitesmoke;
-      color: #616161;
-      overflow-y: auto; // Enable scrolling if content overflows
-  
-      .widgetsSection {
-        margin: 20px;
-        background-color: var(--primary-green);
-        padding: 20px;
-        border-radius: 10px;
-  
-        .heading {
-          display: flex;
-          gap: 10px;
-  
-          .widgetsHeading {
-            color: white;
-            font-size: 24px;
-          }
-        }
-  
-        .widgetsContainer {
-          display: flex;
-          gap: 20px;
-          padding: 10px;
-          animation: oscillate 4s ease-in-out infinite;
-  
-          .widget {
-            background-color: var(--light-green);
-            color: var(--text-dark);
-          }
-        }
-  
-        @keyframes oscillate {
-          0% { transform: translateX(0); }
-          25% { transform: translateX(-30px); }
-          50% { transform: translateX(0); }
-          75% { transform: translateX(30px); }
-          100% { transform: translateX(0); }
+  --primary-green: #2d6a4f;
+  --light-green: #95d5b2;
+  --dark-green: #1b4332;
+  --background-gray: #f7f8f8;
+  --text-dark: #344e41;
+}
+
+.home {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+
+  .homeContainer {
+    flex: 6;
+    background-color: whitesmoke;
+    color: #616161;
+    overflow-y: auto; // Enable scrolling if content overflows
+
+    .widgetsSection {
+      margin: 20px;
+      background-color: var(--primary-green);
+      padding: 20px;
+      border-radius: 10px;
+
+      .heading {
+        display: flex;
+        gap: 10px;
+
+        .widgetsHeading {
+          color: white;
+          font-size: 24px;
         }
       }
-  
-      .chartSection {
+
+      .widgetsContainer {
         display: flex;
         gap: 20px;
-        flex-wrap: wrap;
-        margin: 20px;
-      
-        & > div {
-          flex: 1;
-          min-width: 300px; // Ensures the pie chart and revenue chart fit side by side
+        padding: 10px;
+        animation: oscillate 4s ease-in-out infinite;
+
+        .widget {
+          background-color: var(--light-green);
+          color: var(--text-dark);
         }
-        
       }
-      
-  
+
+      @keyframes oscillate {
+        0% { transform: translateX(0); }
+        25% { transform: translateX(-30px); }
+        50% { transform: translateX(0); }
+        75% { transform: translateX(30px); }
+        100% { transform: translateX(0); }
+      }
+    }
+
+    .chartSection {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 20px;
     
-      .notifications-appointments {
-        display: flex;
-        // flex-direction: column;
-        gap: 20px;
-        margin: 20px;
+      & > div {
+        flex: 1;
+        min-width: 300px; // Ensures the pie chart and revenue chart fit side by side
+      }
+      
+    }
+    
+
   
-        .notifications1, .appointments1 {
-          flex: 1;
-          background-color: white;
-          padding: 20px;
-          border-radius: 8px;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-          transition: transform 0.3s ease;
-  
-          &:hover{
-            transform:scale(1.03)
-          }
-  
-          h2 {
-            margin-bottom: 10px;
-            color: var(--primary-green);
-          }
-  
-          ul {
-            list-style-type: none;
-            padding: 0;
-            border-left: 8px solid var(--primary-green);
-  
-            li {
-              margin-left: 10px;
-              margin-bottom: 8px;
-              color: var(--text-dark);
-            }
+    .notifications-appointments {
+      display: flex;
+      // flex-direction: column;
+      gap: 20px;
+      margin: 20px;
+
+      .notifications1, .appointments1 {
+        flex: 1;
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+
+        &:hover{
+          transform:scale(1.03)
+        }
+
+        h2 {
+          margin-bottom: 10px;
+          color: var(--primary-green);
+        }
+
+        ul {
+          list-style-type: none;
+          padding: 0;
+          border-left: 8px solid var(--primary-green);
+
+          li {
+            margin-left: 10px;
+            margin-bottom: 8px;
+            color: var(--text-dark);
           }
         }
       }
     }
   }
-  
+}

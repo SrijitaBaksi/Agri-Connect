@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import BlogCardExpert from '../blogCardExpert/BlogCardExpert.jsx';
 import './RenderAllBlogs.scss';
-import newRequest from '../../utils/newRequest.js';
+import newRequest from '../../utils/newRequest';
 import { useNavigate } from 'react-router-dom';
 
 const RenderAllPosts = () => {
@@ -16,7 +16,7 @@ const RenderAllPosts = () => {
   useEffect(() => {
     const fetchUserBlogs = async () => {
       try {
-        const response = await newRequest.get('/posts/getPost', {
+        const response = await newRequest.get('/api/posts/getPost', {
           withCredentials: true,
         });
         setBlogs(response.data);

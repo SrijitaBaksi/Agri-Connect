@@ -7,7 +7,7 @@ import RevenueIcon from "@mui/icons-material/AttachMoneyOutlined"; // Use an ico
 import CropIcon from "@mui/icons-material/LocalFloristOutlined"; // Use an icon that fits the context
 import ProfileIcon from "@mui/icons-material/AccountCircleOutlined";
 import LogoutIcon from "@mui/icons-material/ExitToAppOutlined";
-import "./Sidebar.scss";
+import "./sidebar.scss";
 import { Link, useNavigate } from "react-router-dom";
 import logo from '../../assets/logo.png';
 import newRequest from "../../utils/newRequest.js";
@@ -18,7 +18,7 @@ const Sidebar = ({setUserRole}) => {
 
   const handleLogout = async()=>{
     try{
-      await newRequest.post("/auth/signout");
+      await newRequest.post("/api/auth/signout");
       localStorage.removeItem("currentUser");
       setUserRole(null);
       navigate('/');

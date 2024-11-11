@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import newRequest from "../../utils/newRequest.js";
+import newRequest from "../../utils/newRequest";
 import { LineChart, Line, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from "recharts";
 import "./GrowthProgressTracker.scss";
 
@@ -12,7 +12,7 @@ const GrowthProgressTracker = () => {
   useEffect(() => {
     const fetchCropData = async () => {
       try {
-        const response = await newRequest.get("/crops");
+        const response = await newRequest.get("/api/crops");
         const cropsData = response.data;
         console.log(cropsData);
         setCrops(cropsData);
