@@ -1,8 +1,9 @@
 # AgriConnect: Where Farmers Meet Experts & Technology for a Greener Future! 🌾
-![Alt Text](frontend/src/assets/LoginPage.jpeg)
+<img width="1907" height="860" alt="image" src="https://github.com/user-attachments/assets/b72159b4-d82b-4a84-95c6-d7372b13055e" />
 
-![Alt Text](frontend/src/assets/FarmerHomePage.jpeg)
+<img width="1919" height="863" alt="image" src="https://github.com/user-attachments/assets/d5a50f3b-e49a-4140-8745-78fded260535" />
 
+<img width="1903" height="868" alt="image" src="https://github.com/user-attachments/assets/66c912cb-a6e3-42c0-b6c1-088b5f267f5e" />
 
 
 **AgriConnect** is an innovative platform designed to empower farmers by connecting them with agricultural experts and modern technology. Our goal is to make farming smarter, more efficient, and more sustainable. By integrating AI-powered crop recommendations, real-time weather updates, expert consultations, and effective task management, we aim to revolutionize the way farming is done.
@@ -177,4 +178,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Best use of Gemini APi**
 - **Best use of MongoDb Atlas**
 - **Best first time hackers**
+
 
